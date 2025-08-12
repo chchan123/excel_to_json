@@ -126,27 +126,6 @@ def main():
         # 안내 메시지
         st.info("엑셀 파일들을 업로드하여 시작하세요 (여러 개 선택 가능)")
         
-        # 예시 설명
-        with st.expander("변환 예시"):
-            st.markdown("""
-            **입력 (Multiple Excel Files):**
-            - 파일1: sales_data.xlsx (Sheet1, Sheet2)
-            - 파일2: product_info.xlsx (Products, Categories)
-            
-            **출력 (JSON):**
-            ```json
-            {
-              "sales_data": {
-                "Sheet1": ["날짜", "상품명", "수량", "가격"],
-                "Sheet2": ["고객ID", "주문번호", "배송상태"]
-              },
-              "product_info": {
-                "Products": ["상품코드", "상품명", "카테고리", "재고"],
-                "Categories": ["카테고리ID", "카테고리명", "설명"]
-              }
-            }
-            ```
-            """)
 
 if __name__ == "__main__":
     main()
